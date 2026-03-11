@@ -34,7 +34,7 @@ $$y|x\sim\mathrm{Categorical}(y|(\phi\circ f)(x))$$
 
 ### Generative Classification
 
-A probabilistic model that learns the conditional distribution $x|y\sim p(x|y)$ where $x$ is a random variable with support in $X$ that represents the point distribution from a label $y\in Y$ and a prior distribution on the labels $y\sim p(y)$ is called a **generative classification model**, as it models the data distribution itself and can determine the label distribution $`y|x\sim p(y|x)`$ via the Bayes theorem
+A probabilistic model that learns the joint distribution $p(x,y)$ is called a **generative model**. In many cases the joint distribution is factorized as $p(x,y)=p(x|y)p(y)$. Hence, the conditional distribution $p(y|x)$ can be obtained using Bayes' theorem.
 
 ```math
 p(y|x) = \frac{p(y)p(x|y)}{\sum_{y'\in Y} p(y')p(x|y')}
