@@ -1,5 +1,12 @@
 # Discriminative Classification Models in Noise-Free VS Noisy Scenarios
 
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+![Sklearn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=python&logoColor=white)
+
 In this project I present a randomized classifiation problem using self-generated synthetic data to contrast several discriminative models in presence and absense of noise. The true label distribution is created using hard tresholding over a mixture of randomly generated simple geometries restricted to a fixed space $S$. Uniform samplig over $S$ yields the noise-free observations and the noisy ones are obtained by pertubing the features with Gaussian noise or the labels with Bernoulli noise. Multiple visualizations and classification metrics are included to gain insights of the impact of noise when training such models, particularly in the shape of the models class probability density funtion.
 
 <img src="assets/density.png" width=800>
